@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.study_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Study_App"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.emergence.study_app.live.LivePackages"
+            android:exported="false"/>
+        <activity
+            android:name="com.emergence.study_app.Activity.ExoPlayerActivity"
+            android:exported="true"/>
+        <activity android:name="com.emergence.study_app.Activity.CoachingActivity" />
+        <activity android:name="com.emergence.study_app.Activity.InvoiceActivity" />
+        <activity
+            android:name="com.emergence.study_app.Activity.AllPackageDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Checksum"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.FreeVideos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.OpenPdf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.UserWallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.ReferAndEarn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.liveVideo.LiveVideo"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithFullScreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.emergence.study_app.quiz.QuizRanking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.quiz.QuizAnswer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.quiz.QuizQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.ComboDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.ComboActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.quiz.QuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.exoPlayer.ExoPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.testSeriese.MyRanking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.testSeriese.CompletedAnswer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.testSeriese.QuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.testSeriese.PurchaseTestSeriesDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.testSeriese.PurchasedTestSeries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.testSeriese.TestSerieseDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.testSeriese.TestSeries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.About_us_Page"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Purchased_pkg_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Privacy_Policy_Activity"
+            android:exported="true" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Choose_Coaching_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Notes_Video_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Lacture_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Chapter_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Edit_profile_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Help_Support_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Buy_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.View_Subject_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Packages_Detail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Notification_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.User_Detail_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Navigation_Drawer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Custom_toolbar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.OTP_Aunthatication_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Splash_Screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.emergence.study_app.Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.liveVideo.Videos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.emergence.study_app.Activity.Youtubeplayer"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithFullScreen" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name="com.emergence.study_app.Activity.MyFirebaseMessagingeService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_baseline_notifications_24" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_m1tA6Dl5RBDypq" />
+    </application>
+
+</manifest>

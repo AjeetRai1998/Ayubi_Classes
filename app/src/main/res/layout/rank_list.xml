@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/rank"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="15sp"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/text_color"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajay"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/text_color"/>
+        <TextView
+            android:id="@+id/mark"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="40"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/text_color"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/text_color"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_btn_bg_pressed_color"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

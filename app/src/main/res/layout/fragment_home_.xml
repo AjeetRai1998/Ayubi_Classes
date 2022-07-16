@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/swipe_refresh"
+    tools:context="com.emergence.study_app.Fragments.Home_Fragment">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:id="@+id/rec_class"/>
+       <androidx.core.widget.NestedScrollView
+           android:layout_below="@+id/rec_class"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+       <com.smarteist.autoimageslider.SliderView
+           android:id="@+id/slider"
+           android:layout_width="match_parent"
+           android:background="@color/white"
+           android:layout_height="190dp" />
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_below="@+id/slider"
+           android:layout_height="match_parent"
+           android:id="@+id/home_recycler">
+       </androidx.recyclerview.widget.RecyclerView>
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:visibility="gone"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:text="Combo Offer"
+                   android:id="@+id/name"
+                   android:textColor="@color/black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="center"
+                   android:fontFamily="@font/roboto"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:textColor="@color/white"
+                   android:textAlignment="center"
+                   android:text="View All"
+                   android:id="@+id/view_all_combo_btn"
+                   android:textAllCaps="false"
+                   android:background="@drawable/bg_button_viewall"/>
+           </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recycler_combo_offer"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <LinearLayout
+               android:id="@+id/ll_free_videos"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:text="Free Videos"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="center"
+                   android:fontFamily="@font/roboto"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:textColor="@color/white"
+                   android:textAlignment="center"
+                   android:text="View All"
+                   android:id="@+id/view_free_videos"
+                   android:textAllCaps="false"
+                   android:background="@drawable/bg_button_viewall"/>
+           </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recycler_free_videos"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:visibility="gone"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:text="Switch Coaching"
+                   android:textColor="@color/black"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:layout_gravity="center"
+                   android:fontFamily="@font/roboto"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:textColor="@color/white"
+                   android:textAlignment="center"
+                   android:text="View All"
+                   android:id="@+id/view_coaching"
+                   android:textAllCaps="false"
+                   android:background="@drawable/bg_button_viewall"/>
+           </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:visibility="gone"
+               android:layout_marginTop="8dp"
+               android:id="@+id/recycler_coaching"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+
+       </LinearLayout>
+       </androidx.core.widget.NestedScrollView>
+   </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.emergence.study_app.Activity.Buy_Activity">
+    <include layout="@layout/activity_custom_toolbar"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tool"
+        />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_above="@+id/ll_bottom"
+       android:layout_below="@+id/tool"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:padding="10dp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:background="@drawable/card_design"
+               android:padding="10dp"
+
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Package Name"
+                   android:id="@+id/course_name"
+                   android:textColor="@color/white"
+                   android:fontFamily="@font/roboto_slab"
+                   android:textSize="20sp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:orientation="horizontal"
+                   android:weightSum="3">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="final price"
+                       android:id="@+id/price"
+                       android:textColor="@color/white"
+                       android:textSize="16sp"
+                       android:textStyle="italic"
+                       android:fontFamily="sans-serif"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="final price"
+                       android:textColor="@color/white"
+                       android:textSize="16sp"
+                       android:gravity="center"
+                       android:id="@+id/mrp"
+                       android:textStyle="italic"
+                       android:fontFamily="sans-serif"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="final price"
+                       android:id="@+id/discount"
+                       android:textColor="@color/white"
+                       android:textSize="16sp"
+                       android:gravity="end"
+                       android:textStyle="italic"
+                       android:fontFamily="sans-serif"/>
+               </LinearLayout>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="What we learn?"
+                   android:textColor="@color/white"
+                   android:fontFamily="@font/roboto"
+                   android:layout_marginTop="20sp"
+                   android:visibility="gone"
+                   android:textSize="18sp"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="What we learn?"
+                   android:textColor="@color/white"
+                   android:visibility="gone"
+                   android:fontFamily="sans-serif"
+                   android:id="@+id/ww_learn"
+                   android:maxLines="5"
+                   android:layout_marginTop="10dp"
+                   android:textSize="12sp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_marginTop="20sp"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_gravity="center"
+                   android:text="Total amount to pay"
+                   android:textColor="@color/colorPrimary"
+                   android:fontFamily="@font/roboto"
+                   android:textSize="18sp"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1280.00"
+                   android:id="@+id/price_s"
+                   android:layout_gravity="center"
+                   android:textColor="@color/colorPrimary"
+                   android:fontFamily="@font/roboto_slab"
+                   android:textSize="18sp"
+                   />
+
+           </LinearLayout>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginBottom="4dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="30dp"
+               app:cardCornerRadius="5dp"
+               app:cardElevation="2dp"
+               android:layout_height="wrap_content">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:padding="10dp"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:visibility="gone"
+                       android:text="You'll be able to access full package after payment completion"
+                       android:textColor="@color/black" />
+               </RelativeLayout>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginBottom="4dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginLeft="10dp"
+               app:cardCornerRadius="5dp"
+               android:visibility="gone"
+               android:layout_marginRight="10dp"
+               app:cardElevation="2dp"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:padding="10dp"
+                   android:orientation="vertical"
+                   android:layout_height="wrap_content">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:textStyle="bold"
+                           android:textColor="@color/text_color"
+                           android:text="Apply coupon"/>
+                       <TextView
+                           android:id="@+id/tv_browse_coupon"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="17sp"
+                           android:layout_alignParentEnd="true"
+                           android:textColor="@color/colorPrimary"
+                           android:text="@string/browse_coupon"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="12sp"
+                       android:textColor="#838383"
+                       android:layout_marginTop="5dp"
+                       android:text="Apply you coupon code here and get discount at your packages. Coupon will be apllied if it's vailid"/>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     >
+                     <EditText
+                         android:id="@+id/et_coupon_code"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="Enter Coupon Code"
+                         android:background="#EAE8E8"
+                         android:padding="5dp"
+                         android:textColor="#8F8D8D"
+                         android:layout_toStartOf="@+id/tv_apply"
+                         android:fontFamily="@font/roboto"
+                         android:layout_marginEnd="5dp"
+                         android:textStyle="italic"
+                         android:singleLine="true"
+                         android:textColorHint="#8F8D8D"/>
+                     <TextView
+                         android:id="@+id/tv_apply"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Apply"
+                         android:layout_marginStart="5dp"
+                         android:layout_alignParentEnd="true"
+                         android:fontFamily="@font/roboto_slab"
+                         android:textSize="17sp"
+                         android:textColor="@color/red_btn_bg_color"/>
+
+                 </RelativeLayout>
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginBottom="4dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginLeft="10dp"
+               app:cardCornerRadius="5dp"
+               app:contentPadding="8sp"
+               android:id="@+id/card_wallet"
+               android:layout_marginRight="10dp"
+               app:cardElevation="2dp"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+               <CheckBox
+                   android:id="@+id/checkbox"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:buttonTint="@color/colorPrimary"
+                   android:textColor="@color/text_color"
+                   android:text="Use your wallet coins to get extra discount."/>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="5dp"
+                 android:gravity="center">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Wallet Points = "
+                     android:textColor="@color/gray_btn_bg_pressed_color"
+                     android:textSize="20sp"
+                     android:layout_gravity="center_vertical"
+                     android:fontFamily="@font/roboto"/>
+                 <TextView
+                     android:id="@+id/tv_points"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="00"
+                     android:layout_gravity="center_vertical"
+                     android:textColor="@color/gray_btn_bg_pressed_color"
+                     android:textSize="25sp"
+                     android:fontFamily="@font/roboto"/>
+
+             </LinearLayout>
+                   <TextView
+                       android:id="@+id/tv_wallet_discount"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/roboto"
+                       android:textColor="@color/text_color"
+                       android:layout_marginTop="5dp"
+                       android:layout_gravity="center"
+                       android:visibility="gone"
+                       />
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+       </LinearLayout>
+   </ScrollView>
+
+<RelativeLayout
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_above="@id/purchase_btn">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have to pay"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/roboto_slab"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_total_have_pay"
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:text="\u20B9 100"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_cut_price"
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:text="\u20B9 100"
+            android:visibility="gone"
+            android:textColor="#5C003F7F"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+    <Button
+        android:id="@+id/purchase_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_button"
+        android:text="Purchase Now"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

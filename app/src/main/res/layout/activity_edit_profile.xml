@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.emergence.study_app.Activity.Edit_profile_Activity">
+    <include layout="@layout/activity_custom_toolbar"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tool"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_below="@+id/tool"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/pr_icon"
+               android:layout_width="180dp"
+               android:layout_height="180dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/profile_student"
+               app:civ_border_color="@color/colorPrimary"
+               app:civ_border_width="1dp" />
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               app:cardElevation="0dp"
+               android:layout_margin="5dp"
+               android:layout_marginBottom="15dp"
+               app:cardCornerRadius="40dp"
+               android:id="@+id/pr_upload"
+               android:layout_centerHorizontal="true"
+               app:cardBackgroundColor="@color/colorPrimary"
+               android:layout_alignBottom="@+id/pr_icon"
+               android:layout_alignRight="@+id/pr_icon"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_margin="15dp"
+                   android:backgroundTint="@color/white"
+                   android:background="@drawable/ic_camera"/>
+
+           </androidx.cardview.widget.CardView>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="50dp"
+               android:padding="10dp"
+               android:layout_below="@+id/pr_icon">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Name"
+                   android:textSize="14sp"
+                   android:textColor="@color/text_color"/>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/bg_edit_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/pr_name"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@android:color/transparent"
+                       android:fontFamily="@font/roboto"
+                       android:text="User Name"
+                       android:textColor="@color/black"
+                       android:textSize="16sp" />
+
+               </RelativeLayout>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Mobile"
+                   android:textSize="14sp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/text_color"/>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/bg_edit_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/pr_mobile"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@android:color/transparent"
+                       android:fontFamily="@font/roboto"
+                       android:text="Mobile "
+                       android:textColor="@color/black"
+                       android:textSize="16sp" />
+
+               </RelativeLayout>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Email"
+                   android:textSize="14sp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/text_color"/>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/bg_edit_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <EditText
+                       android:id="@+id/pr_email"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@android:color/transparent"
+                       android:fontFamily="@font/roboto"
+                       android:text="User Name"
+                       android:textColor="@color/black"
+                       android:textSize="16sp" />
+
+               </RelativeLayout>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Coaching"
+                   android:textSize="14sp"
+                   android:visibility="gone"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/text_color"/>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="4dp"
+                   android:visibility="gone"
+                   android:background="@drawable/bg_edit_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/pr_coaching"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/roboto"
+                       android:text="Coaching"
+                       android:textColor="@color/black"
+                       android:textSize="16sp" />
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/bg_edit_login"
+                   android:layout_width="match_parent"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Coaching mname"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/roboto"
+                       android:id="@+id/pr_class"/>
+
+               </RelativeLayout>
+
+           </LinearLayout>
+
+       </RelativeLayout>
+   </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/save_profile"
+        android:text="Save Changes"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "emergence.infotech.ayubi"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 6
+        versionName "1.0.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    //Bottom navigation
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+
+    
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+
+    //Sweet Alert
+    implementation 'com.github.f0ris.sweetalert:library:1.5.6'
+
+
+    //Adding ImageSlider
+    implementation 'com.github.smarteist:autoimageslider:1.3.9'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+
+    //Circular image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //Bottom Sheet
+    implementation 'com.google.android.material:material:1.2.1'
+
+    //Retrofit Library
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.6.1'
+
+    //chooose image
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+    implementation 'com.razorpay:razorpay-java:1.4.2'
+
+    //GIF library
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    //zoomview
+    implementation 'com.jsibbold:zoomage:1.3.1'
+    // For youtube Url Extractor
+   // implementation 'com.github.loafofpiecrust:android-youtubeExtractor:v1.6.0'
+    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:v2.1.0'
+
+    // ExoPlayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.13.2'
+
+  //  implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.23'
+
+    implementation platform('com.google.firebase:firebase-bom:26.7.0')
+
+    // Declare the dependencies for the Firebase Cloud Messaging and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    //Razorpay
+    implementation 'com.razorpay:checkout:1.5.13'
+
+  //  implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //Upi
+    implementation 'dev.shreyaspatil.EasyUpiPayment:EasyUpiPayment:3.0.3'
+
+    implementation "com.github.skydoves:elasticviews:2.1.0"
+//    implementation('com.paytm:pgplussdk:1.3.3') {
+//        transitive = true;
+//    }
+
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.6.8'
+
+
+
+//    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

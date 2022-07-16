@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="end"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/qst_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q1 : some dummy question here"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto"
+                        android:textStyle="bold"
+                        android:layout_toStartOf="@+id/tv_marks"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:text="2 marks"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/roboto"
+                        />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="end"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/roboto"
+                    android:text="Minus Marking for this question is"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content">
+                    <com.jsibbold.zoomage.ZoomageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:zoomage_restrictBounds="false"
+                        app:zoomage_animateOnReset="true"
+                        app:zoomage_autoResetMode="UNDER"
+                        app:zoomage_autoCenter="true"
+                        app:zoomage_zoomable="true"
+                        android:layout_centerInParent="true"
+                        app:zoomage_translatable="true"
+                        app:zoomage_minScale="0.6"
+                        app:zoomage_maxScale="8"
+                        />
+                </RelativeLayout>
+                <CheckBox
+                    android:id="@+id/check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a. option 1"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16sp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp">
+
+
+                    <RadioGroup
+                        android:id="@+id/rad_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:id="@+id/ans_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/text_color"
+                            android:fontFamily="@font/roboto"
+                            android:buttonTint="@color/colorPrimary"
+                            android:textSize="16sp"
+                            />
+                        <com.jsibbold.zoomage.ZoomageView
+                            android:id="@+id/iv_ans1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:zoomage_restrictBounds="false"
+                            app:zoomage_animateOnReset="true"
+                            app:zoomage_autoResetMode="UNDER"
+                            app:zoomage_autoCenter="true"
+                            app:zoomage_zoomable="true"
+                            app:zoomage_translatable="true"
+                            app:zoomage_minScale="0.6"
+                            app:zoomage_maxScale="8"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/ans_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:buttonTint="@color/colorPrimary"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="16sp"/>
+                        <com.jsibbold.zoomage.ZoomageView
+                            android:id="@+id/iv_ans2"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:zoomage_restrictBounds="false"
+                            app:zoomage_animateOnReset="true"
+                            app:zoomage_autoResetMode="UNDER"
+                            app:zoomage_autoCenter="true"
+                            app:zoomage_zoomable="true"
+                            app:zoomage_translatable="true"
+                            app:zoomage_minScale="0.6"
+                            app:zoomage_maxScale="8"
+                            />
+                        <RadioButton
+                            android:id="@+id/ans_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:buttonTint="@color/colorPrimary"
+                            android:textColor="@color/text_color"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="16sp"/>
+                        <com.jsibbold.zoomage.ZoomageView
+                            android:id="@+id/iv_ans3"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:zoomage_restrictBounds="false"
+                            app:zoomage_animateOnReset="true"
+                            app:zoomage_autoResetMode="UNDER"
+                            app:zoomage_autoCenter="true"
+                            app:zoomage_zoomable="true"
+                            app:zoomage_translatable="true"
+                            app:zoomage_minScale="0.6"
+                            app:zoomage_maxScale="8"
+                            />
+                        <RadioButton
+                            android:id="@+id/ans_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:buttonTint="@color/colorPrimary"
+                            android:textColor="@color/text_color"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/roboto"
+                            android:paddingLeft="10dp"
+                            />
+                        <com.jsibbold.zoomage.ZoomageView
+                            android:id="@+id/iv_ans4"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:zoomage_restrictBounds="false"
+                            app:zoomage_animateOnReset="true"
+                            app:zoomage_autoResetMode="UNDER"
+                            app:zoomage_autoCenter="true"
+                            app:zoomage_zoomable="true"
+                            app:zoomage_translatable="true"
+                            app:zoomage_minScale="0.6"
+                            app:zoomage_maxScale="8"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_skip_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="end"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/red_btn_bg_color"
+                    android:text="Skip Question"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimary"/>
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/roboto"
+                        android:text="Type description about your question and answer"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_botom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_sb_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="12sp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:visibility="visible"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:text="Submit Test"/>
+                <Button
+                    android:id="@+id/btn_sbmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="12sp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:visibility="visible"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:text="Save &amp; Next"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

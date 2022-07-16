@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ayubi Digital</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alert_text">alert_text</string>
+    <string name="permission_camera_rationale11">permission_camera</string>
+    <string name="reqst_permission">reqst_permission</string>
+    <string name="share_using">share_using</string>
+    <string name="default_notification_channel_id" />
+    <string name="browse_coupon"><u>Browse Coupons</u></string>
+</resources>

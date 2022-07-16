@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:contentPadding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="4dp">
+                    <TextView
+                        android:id="@+id/tv_text"
+                        android:text="T"
+                        android:textSize="40sp"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_slab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Exam Title"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"/>
+                    <TextView
+                        android:id="@+id/tv_totl_quest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Exam Duration"
+                        android:textSize="12sp"
+                        android:paddingTop="3dp"
+                        android:fontFamily="@font/roboto"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"/>
+                    <TextView
+                        android:id="@+id/tv_timing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Expiry date"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="12sp"
+                        android:paddingTop="3dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"/>
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="12sp"
+                        android:text="vdvds"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_ranking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:backgroundTint="@color/main_green_stroke_color"
+                    android:background="@drawable/bg_button"
+                    android:text="Ranking"/>
+                <TextView
+                    android:id="@+id/tv_start_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingBottom="4dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:paddingTop="4dp"
+                    android:backgroundTint="@color/logo_color"
+                    android:background="@drawable/bg_button"
+                    android:text="Start Test"/>
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="8dp"
+                    android:layout_marginStart="5dp"
+                    android:paddingEnd="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:background="@drawable/bg_button"
+                    android:text="Result"/>
+                <TextView
+                    android:id="@+id/tv_upcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="8dp"
+                    android:layout_marginStart="5dp"
+                    android:paddingEnd="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:backgroundTint="@color/material_blue_grey_95"
+                    android:background="@drawable/bg_button"
+                    android:text="Upcoming Quiz"/>
+
+                <TextView
+                    android:id="@+id/tv_not_parti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="8dp"
+                    android:layout_marginStart="5dp"
+                    android:paddingEnd="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:backgroundTint="@color/red_btn_bg_pressed_color"
+                    android:background="@drawable/bg_button"
+                    android:text="Not Participated"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

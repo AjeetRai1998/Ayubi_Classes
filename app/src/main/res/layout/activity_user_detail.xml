@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.emergence.study_app.Activity.User_Detail_Activity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <ImageView
+           android:layout_width="120dp"
+           android:layout_height="120dp"
+           android:layout_marginTop="40dp"
+           android:src="@drawable/logo"
+           android:layout_gravity="center"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_marginTop="40dp"
+           android:layout_height="wrap_content"
+           android:text="Please Enter Your Details below"
+           android:textColor="@color/colorPrimary"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:paddingTop="10dp"
+           android:textSize="16sp"
+           android:fontFamily="@font/roboto"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="and stay connected with us"
+           android:textColor="@color/colorPrimary"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:paddingBottom="10dp"
+           android:textSize="16sp"
+           android:fontFamily="@font/roboto"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/bg_edit_login">
+
+           <EditText
+               android:id="@+id/et_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@android:color/transparent"
+               android:fontFamily="@font/roboto"
+               android:hint="Enter Name"
+               android:padding="10dp"
+               android:textColor="@color/colorPrimary"
+               android:textColorHint="#818080"
+               android:textSize="16sp" />
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/bg_edit_login">
+
+           <EditText
+               android:id="@+id/et_email"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@android:color/transparent"
+               android:fontFamily="@font/roboto"
+               android:hint="Enter Email"
+               android:inputType="textEmailAddress"
+               android:padding="10dp"
+               android:textColor="@color/colorPrimary"
+               android:textColorHint="#818080"
+               android:textSize="16sp" />
+       </RelativeLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:orientation="vertical"
+           android:padding="10dp"
+           android:background="@drawable/bg_edit_login"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Select Gender"
+               android:fontFamily="@font/roboto"
+               android:textSize="16sp"
+               android:paddingBottom="10dp"
+               android:textColor="@color/colorPrimary"/>
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:id="@+id/radio_group"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Male"
+                   android:id="@+id/radio_male"
+                   android:layout_gravity="center"
+                   android:textColor="#797B7C"
+                   android:textSize="16sp"
+                   android:buttonTint="@color/colorPrimary"/>
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Female"
+                   android:id="@+id/radio_female"
+                   android:layout_gravity="center"
+                   android:textColor="#797B7C"
+                   android:textSize="16sp"
+                   android:buttonTint="@color/colorPrimary"
+                   />
+
+           </RadioGroup>
+
+
+
+       </LinearLayout>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:padding="10dp"
+           android:visibility="visible"
+           android:background="@drawable/bg_edit_login">
+
+           <EditText
+               android:id="@+id/et_ref_id"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@android:color/transparent"
+               android:fontFamily="@font/roboto"
+               android:hint="Enter Referral Id (optional)"
+               android:padding="10dp"
+               android:singleLine="true"
+               android:textColor="@color/colorPrimary"
+               android:textColorHint="#818080"
+               android:textSize="16sp" />
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:id="@+id/spin_class"/>
+       </RelativeLayout>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="40dp"
+           android:text="Next"
+           android:id="@+id/btn_next"
+           android:background="@drawable/bg_button"
+           android:textAllCaps="false"/>
+   </LinearLayout>
+</ScrollView>

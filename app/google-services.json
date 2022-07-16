@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "876153958884",
+    "project_id": "ayubi-digital-5e32b",
+    "storage_bucket": "ayubi-digital-5e32b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876153958884:android:9731f8de672d60cb3317f1",
+        "android_client_info": {
+          "package_name": "com.example.study_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876153958884-tjjffmojbsil0o77vsi33820p5sn42i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXKZ--cEKpO8XX0ysziSCJbFoU53vJHfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876153958884-tjjffmojbsil0o77vsi33820p5sn42i1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876153958884:android:6fc75ce3efdea85d3317f1",
+        "android_client_info": {
+          "package_name": "emergence.infotech.ayubi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876153958884-tjjffmojbsil0o77vsi33820p5sn42i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXKZ--cEKpO8XX0ysziSCJbFoU53vJHfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876153958884-tjjffmojbsil0o77vsi33820p5sn42i1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

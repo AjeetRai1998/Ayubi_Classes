@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/notification_at"
+    android:background="@color/white"
+    tools:context="com.emergence.study_app.Activity.Notification_Activity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <include layout="@layout/activity_custom_toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/recycler_notification"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="bottom"
+           android:id="@+id/no_data"
+           android:visibility="gone"
+           android:layout_centerInParent="true"
+           android:layout_gravity="center"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_gravity="center"
+               android:layout_height="150dp"
+               android:background="@drawable/watcher"
+               android:backgroundTint="@color/colorPrimary"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sorry, No Data Found !"
+               android:textColor="@color/colorPrimary"
+               android:layout_gravity="center"
+               android:layout_marginTop="40dp"
+               android:fontFamily="@font/roboto"
+               android:textSize="30sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="There is no data available"
+               android:textColor="@color/colorPrimary"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:fontFamily="sans-serif"
+               android:textSize="14sp"/>
+       </LinearLayout>
+   </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
